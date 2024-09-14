@@ -1,0 +1,137 @@
+﻿/* site.css */
+.navbar {
+    background: linear-gradient(90deg, #007bff, #00d084);
+    border-radius: 0 0 10px 10px;
+}
+
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd700 !important;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-nav .nav-link {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Web_CRUD.styles.css */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+    }
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+    .btn-secondary:hover {
+        background-color: #5a6268;
+        transform: scale(1.05);
+    }
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+    .btn-danger:hover {
+        background-color: #c82333;
+        transform: scale(1.05);
+    }
+
+/* Global styles for the layout */
+html, body {
+    height: 100%; /* Full height for the page */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Stack content and footer vertically */
+}
+
+/* Main content area to push footer to bottom */
+main {
+    flex: 1; /* Takes up remaining space */
+}
+
+/* Footer styling */
+footer {
+    background: linear-gradient(90deg, #007bff, #00d084); /* Gradient background */
+    border-radius: 0 0 10px 10px; /* Rounded corners */
+    color: #fff; /* Text color */
+    padding: 20px 0; /* Padding */
+    text-align: center; /* Center text */
+    width: 100%; /* Full width */
+    margin-top: auto; /* Pushes footer to bottom */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+}
+
+    footer a {
+        color: #ffd700; /* Link color */
+        transition: color 0.3s, text-shadow 0.3s; /* Smooth color transition and shadow effect */
+    }
+
+        footer a:hover {
+            color: #fff; /* Hover color */
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow on hover */
+        }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    footer {
+        padding: 10px 0; /* Adjust padding for smaller screens */
+    }
+
+        footer a {
+            font-size: 14px; /* Adjust font size for smaller screens */
+        }
+}
+
+
+/* site.css */
+@media (max-width: 768px) {
+    .navbar-expand-sm .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 10px 0;
+    }
+}
+
+/* Web_CRUD.styles.css */
+h1, p {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

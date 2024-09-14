@@ -1,0 +1,117 @@
+﻿@{
+    ViewData["Title"] = "Analytics";
+}
+
+<div class="container text-center my-5">
+    <!-- Header Section -->
+    <h1 class="display-3 fw-bold text-primary">User Analytics</h1>
+    <p class="lead text-muted">Gain insights and make informed decisions with your user data.</p>
+
+    <!-- Export Buttons -->
+    <div class="mb-4">
+        <a href="@Url.Action("ExportPdf", "Analytics")" class="btn btn-outline-primary btn-lg mx-2">
+            <i class="fas fa-file-pdf"></i> Export PDF
+        </a>
+        <a href="@Url.Action("ExportExcel", "Analytics")" class="btn btn-outline-success btn-lg mx-2">
+            <i class="fas fa-file-excel"></i> Export Excel
+        </a>
+    </div>
+
+    <!-- Analytics Cards -->
+    <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Total Users</h5>
+                    <p class="card-text text-muted">Get detailed statistics on the total number of users.</p>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Active Users</h5>
+                    <p class="card-text text-muted">Track users actively engaged in your platform.</p>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">New Registrations</h5>
+                    <p class="card-text text-muted">Add New user Into System.</p>
+                    <a href="@Url.Action("Index", "Employees")" class="btn btn-primary">New Registrations</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Custom Styling -->
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f8f9fa;
+    }
+
+    h1 {
+        color: #007bff;
+    }
+
+    .btn-outline-primary {
+        border: 2px solid #007bff;
+        color: #007bff;
+        transition: all 0.3s;
+    }
+
+        .btn-outline-primary:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+    .btn-outline-success {
+        border: 2px solid #28a745;
+        color: #28a745;
+        transition: all 0.3s;
+    }
+
+        .btn-outline-success:hover {
+            background-color: #28a745;
+            color: #fff;
+        }
+
+    .card {
+        border-radius: 15px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+    .card-title {
+        font-size: 1.5rem;
+        color: #343a40;
+    }
+
+    .card-text {
+        color: #6c757d;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border: none;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+</style>

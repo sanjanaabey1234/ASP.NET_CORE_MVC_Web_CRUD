@@ -1,0 +1,144 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container text-center my-5">
+    <!-- Hero Section -->
+    <section class="hero bg-primary text-white rounded-3 p-5 mb-4">
+        <h1 class="display-3 fw-bold">Welcome to the User Management System</h1>
+        <p class="lead">Your one-stop solution for managing users efficiently and effectively.</p>
+        <a href="@Url.Action("Index", "Employees")" class="btn btn-light btn-lg mt-3">Get Started</a>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Manage Employees</h5>
+                        <p class="card-text">Easily create, edit, and delete employee records with a user-friendly interface.</p>
+                        <a href="@Url.Action("Index", "Employees")" class="btn btn-primary">Manage Employees</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">User Analytics</h5>
+                        <p class="card-text">Gain insights into your user data and make informed decisions.</p>
+                        <a href="@Url.Action("Index", "Analytics")" class="btn btn-primary">View Analytics</a>
+                        <!-- Index function ekata ynna Analytics controller eke thiyena -->
+                        <!-- ethanin view ekata yawana adaala -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Help & Support</h5>
+                        <p class="card-text">Get assistance with our comprehensive support resources.</p>
+                        <a href="#" class="btn btn-primary">Get Help</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<style>
+    /* Hero Section */
+    .hero {
+        background: linear-gradient(135deg, #001bff 0%, #00fff3 100%);
+        color: #fff;
+        border-radius: 15px;
+        padding: 4rem 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero .btn-light {
+            background-color: #fff;
+            color: #007bff;
+            border-radius: 25px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+        }
+
+            .hero .btn-light:hover {
+                background-color: #f0f0f0;
+                color: #0056b3;
+                transform: translateY(-2px);
+            }
+
+    /* Info Section */
+    .info {
+        padding: 2rem 0;
+    }
+
+        .info .card {
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+            .info .card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            }
+
+        .info .card-body {
+            padding: 2rem;
+        }
+
+        .info .card-title {
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .info .card-text {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .info .btn-primary {
+            background-color: #007bff;
+            border: none;
+            border-radius: 25px;
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+            .info .btn-primary:hover {
+                background-color: #0056b3;
+                transform: translateY(-2px);
+            }
+
+    .btn-light {
+        background-color: #f8f9fa;
+        color: #007bff;
+        border-radius: 25px;
+        padding: 0.75rem 1.5rem;
+        font-weight: 600;
+    }
+
+        .btn-light:hover {
+            background-color: #e2e6ea;
+        }
+
+
+</style>
